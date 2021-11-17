@@ -31,7 +31,7 @@ function simular() {
   resultadoPrazo.textContent = resultadoPrazoMes
 
   taxaMensal = (1 + simulacaoJuros.valueAsNumber) ** 0.0833333 - 1
-  resultadoJuros.textContent = taxaMensal
+  resultadoJuros.textContent = taxaMensal.toFixed(5)
 
   let valor = simulacaoValor.valueAsNumber
   let valorParcelas = valor / resultadoPrazoMes
@@ -44,12 +44,12 @@ function simular() {
     juros = +i * taxaMensal
     jurosAcumulados += juros
     total = valorParcelas + i * taxaMensal
-    lista.push(juros, total)
+    lista.push(juros.toFixed(2), total.toFixed(2))
     // console.log('juros', juros, 'total', total)
   }
-  resultadoJurosAcumulados.textContent = jurosAcumulados
+  resultadoJurosAcumulados.textContent = jurosAcumulados.toFixed(2)
 
-  parcela.textContent = valorParcelas
+  parcela.textContent = valorParcelas.toFixed(2)
 
   jurosParcela1.textContent = lista[0]
   jurosParcela2.textContent = lista[2]
