@@ -6,7 +6,13 @@ let resultadoJuros = document.getElementById('resultadoJuros')
 let resultadoJurosAcumulados = document.getElementById(
   'resultadoJurosAcumulados',
 )
-let parcela = document.getElementById('parcela')
+let parcela1 = document.getElementById('parcela1')
+let parcela2 = document.getElementById('parcela2')
+let parcela3 = document.getElementById('parcela3')
+let parcela4 = document.getElementById('parcela4')
+let parcela5 = document.getElementById('parcela5')
+let parcela6 = document.getElementById('parcela6')
+
 let jurosParcela1 = document.getElementById('jurosParcela1')
 let jurosParcela2 = document.getElementById('jurosParcela2')
 let jurosParcela3 = document.getElementById('jurosParcela3')
@@ -49,7 +55,12 @@ function simular() {
   }
   resultadoJurosAcumulados.textContent = jurosAcumulados.toFixed(2)
 
-  parcela.textContent = valorParcelas.toFixed(2)
+  parcela1.textContent = valorParcelas.toFixed(2)
+  parcela2.textContent = valorParcelas.toFixed(2)
+  parcela3.textContent = valorParcelas.toFixed(2)
+  parcela4.textContent = valorParcelas.toFixed(2)
+  parcela5.textContent = valorParcelas.toFixed(2)
+  parcela6.textContent = valorParcelas.toFixed(2)
 
   jurosParcela1.textContent = lista[0]
   jurosParcela2.textContent = lista[2]
