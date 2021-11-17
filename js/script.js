@@ -6,10 +6,25 @@ let resultadoJuros = document.getElementById('resultadoJuros')
 let resultadoJurosAcumulados = document.getElementById(
   'resultadoJurosAcumulados',
 )
+let parcela = document.getElementById('parcela')
+let jurosParcela1 = document.getElementById('jurosParcela1')
+let jurosParcela2 = document.getElementById('jurosParcela2')
+let jurosParcela3 = document.getElementById('jurosParcela3')
+let jurosParcela4 = document.getElementById('jurosParcela4')
+let jurosParcela5 = document.getElementById('jurosParcela5')
+let jurosParcela6 = document.getElementById('jurosParcela6')
+
+let totalParcela1 = document.getElementById('totalParcela1')
+let totalParcela2 = document.getElementById('totalParcela2')
+let totalParcela3 = document.getElementById('totalParcela3')
+let totalParcela4 = document.getElementById('totalParcela4')
+let totalParcela5 = document.getElementById('totalParcela5')
+let totalParcela6 = document.getElementById('totalParcela6')
 
 let meses = 12
 let resultadoPrazoMes = 0
 let taxaMensal = 0
+let valorParcela = 0
 
 function simular() {
   resultadoPrazoMes = simulacaoPrazo.valueAsNumber * meses
@@ -23,12 +38,30 @@ function simular() {
   let juros = 0
   let jurosAcumulados = 0
   let total = 0
+  let lista = []
 
   for (let i = valor; i >= 0; i = i - valorParcelas) {
     juros = +i * taxaMensal
     jurosAcumulados += juros
     total = valorParcelas + i * taxaMensal
-    console.log('juros', juros, 'total', total)
+    lista.push(juros, total)
+    // console.log('juros', juros, 'total', total)
   }
   resultadoJurosAcumulados.textContent = jurosAcumulados
+
+  parcela.textContent = valorParcelas
+
+  jurosParcela1.textContent = lista[0]
+  jurosParcela2.textContent = lista[2]
+  jurosParcela3.textContent = lista[4]
+  jurosParcela4.textContent = lista[6]
+  jurosParcela5.textContent = lista[8]
+  jurosParcela6.textContent = lista[10]
+
+  totalParcela1.textContent = lista[1]
+  totalParcela2.textContent = lista[3]
+  totalParcela3.textContent = lista[5]
+  totalParcela4.textContent = lista[7]
+  totalParcela5.textContent = lista[9]
+  totalParcela6.textContent = lista[11]
 }
