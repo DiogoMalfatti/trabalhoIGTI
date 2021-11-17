@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalho Prático - Mod 04 / IGTI</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section id="simulacao" class="simulacao">
+      <h1>Simulação de Financiamento</h1>
+      <div class="simulacaoFlex">
+        <div>
+          <p>Valor :</p>
+          <input id="simulacaoValor" type="number" />
+        </div>
+        <div>
+          <p>Prazo (anos) :</p>
+          <input id="simulacaoPrazo" type="number" />
+        </div>
+        <div>
+          <p>Juros ao ano :</p>
+          <input id="simulacaoJuros" type="number" />
+        </div>
+      </div>
+      <div class="simulacaobtn">
+        <button onclick="simular()" class="btn">Simular</button>
+      </div>
+    </section>
+
+    <section id="resultado" class="resultado">
+      <h1>Resultado</h1>
+      <div class="resultadoFlex">
+        <div>
+          <p>Prazo (meses) :</p>
+          <p id="resultadoPrazo" class="resultadoCampo"></p>
+        </div>
+        <div>
+          <p>Juros ao mês :</p>
+          <p id="resultadoJuros" class="resultadoCampo"></p>
+        </div>
+        <div>
+          <p>Juros acumulados :</p>
+          <p id="resultadoJurosAcumulados" class="resultadoCampo"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tabela">
+      <table cellspacing="30">
+        <thead>
+          <tr class="tabelatitulo">
+            <th><h1>Prestação</h1></th>
+            <th><h1>Amortização</h1></th>
+            <th><h1>Juros</h1></th>
+            <th><h1>Total</h1></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>833.33</td>
+            <td>1286.81</td>
+            <td>2120.14</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>833.33</td>
+            <td>1286.81</td>
+            <td>2120.14</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>833.33</td>
+            <td>1286.81</td>
+            <td>2120.14</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>833.33</td>
+            <td>1286.81</td>
+            <td>2120.14</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>833.33</td>
+            <td>1286.81</td>
+            <td>2120.14</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>833.33</td>
+            <td>1286.81</td>
+            <td>2120.14</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

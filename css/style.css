@@ -1,0 +1,50 @@
+.simulacao {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid blue;
+}
+.simulacao h1 {
+  color: blue;
+}
+.simulacaoFlex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.simulacaobtn {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.resultado {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid blue;
+}
+.resultado h1 {
+  color: blue;
+}
+.resultadoFlex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.resultadoCampo {
+  border: 1px solid black;
+  width: 170px;
+  height: 20px;
+  text-align: center;
+}
+.tabela {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+}
+.tabelatitulo {
+  color: blue;
+}
